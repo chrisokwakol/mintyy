@@ -1,116 +1,763 @@
 .container {
-  padding: 0 2rem;
+	padding: 0 0rem;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	min-height: 100vh;
+	padding: 0rem 0;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+/* MOBILE NAV MENU */
+.mobileNavBtn {
+	display: none;
+	font-size: 30px;
+	color: #3b4b5b;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+/* END MOBILE NAV MENU */
+
+.navLinks .active {
+	color: red;
+	text-decoration: none;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.navLinks a:hover,
+.navLinks a:focus,
+.navLinks a:active {
+	text-decoration: underline;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+	margin: 0;
+	line-height: 1.15;
+	font-size: 4rem;
 }
 
 .code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+	background: #fafafa;
+	border-radius: 5px;
+	padding: 0.75rem;
+	font-size: 1.1rem;
+	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+		Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+/* SCHEDULE A CALL BUTTON LIGHT THEME */
+.scheduleACallBtn {
+	height: 36px;
+	width: 173px;
+	background-color: #015bd7;
+	color: #ffffff;
+	outline: inherit;
+	border: none;
+	font-weight: 500;
+	font-size: 1rem;
+	font-family: "Poppins", sans-serif !important;
+	cursor: pointer;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.scheduleACallBtn:hover {
+	background: transparent;
+	border: 1px solid #3b4b5b;
+	color: #015bd7;
+}
+
+/* LEARN MORE BUTTON LIGHT THEME */
+.learnMoreBtn {
+	height: 36px;
+	width: 173px;
+	margin-right: 16px;
+	background-color: transparent;
+	color: #000000;
+	font-size: 1rem;
+	font-weight: 500;
+	/* outline: #000000; */
+	/* border: none; */
+	border: 1px solid #3b4b5b;
+	font-family: "Poppins", sans-serif !important;
+	cursor: pointer;
+}
+
+.learnMoreBtn:hover {
+	background: #015bd7;
+	color: #ffffff;
+}
+
+/* HEADER */
+.header {
+	background-color: #eef6fe;
+	height: 100vh;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.navLinks {
+	display: flex;
+	padding: 0;
+}
+
+.navLinks li {
+	list-style: none;
+	margin: 16px;
+	font-weight: 500;
+}
+
+.headerBtns {
+	display: flex;
+	padding: 40px;
+	justify-content: center;
+}
+
+.heroContent {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	/* align-items: center; */
+	/* justify-content: center; */
+	max-width: 730px;
+	text-align: center;
+	margin-top: 30px;
+}
+/* 
+.heroContent > div {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+} */
+
+.heroContent p {
+	max-width: 540px;
+	margin: auto;
+}
+
+.heroContent h1 {
+	font-size: 3.5rem;
+	line-height: 60px;
+	/* margin: 24px; */
+	max-width: 730px;
+}
+
+/* METRICS */
+/* Description */
+.title,
+.description {
+	text-align: center;
+}
+
+.description {
+	margin: 4rem 0;
+	line-height: 1.5;
+	font-size: 0.875rem;
+}
+
+.metricsSection {
+	display: flex;
+	flex-direction: column;
+	/* max-height: 181px; */
+	margin: 55px auto;
+}
+
+.metrics {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
+	/* max-height: 125px; */
+	/* padding-top: 11px; */
+	/* padding-bottom: 11px; */
+}
+
+.metricsCard {
+	/* flex: 1; */
+	margin: 1rem;
+	padding: 1.5rem;
+	text-align: center;
+	color: inherit;
+	text-decoration: none;
+	border-radius: 10px;
+	max-width: 380px;
+	max-height: 108px;
+}
+
+/* PITCH DECK */
+.pitchDeck {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-evenly;
+	padding-top: 33px;
+	padding-bottom: 33px;
+	flex-wrap: wrap;
+	width: 100%;
+	/* column-gap: 1.875rem; */
+}
+
+.pitchDeck .pitchDeckCard {
+	flex: 1;
+	margin: 1rem;
+	padding: 40px;
+	text-align: center;
+	color: inherit;
+	text-decoration: none;
+	border: 1px solid #eaeaea;
+	/* border-radius: 10px; */
+	transition: color 0.15s ease, border-color 0.15s ease;
+	max-width: 380px;
+	max-height: 380px;
+	background-color: #eef6fe;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+	color: #0070f3;
+	border-color: #0070f3;
 }
 
 .card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+	margin: 0 0 1rem 0;
+	font-size: 1.5rem;
 }
 
 .card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+	margin: 0;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.pitchDeckCard .pitchDeckIcon {
+	font-size: 2rem;
+	color: "#3B4B5B";
+	margin-bottom: 20px;
+}
+
+/* SERVICES */
+/* Services one */
+.servicesOne {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+	margin: 40px auto;
+}
+
+.services0ne .content {
+	max-width: 469px;
+}
+
+.services0ne .content h1 {
+	font-size: 2.5rem;
+}
+
+.services0ne .content p,
+.aboutServices a {
+	font-size: 0.875rem;
+}
+
+.aboutServices p {
+	font-size: 0.875rem;
+}
+
+.aboutServices {
+	display: flex;
+}
+
+.aboutServicesOne {
+	max-width: 214px;
+	margin-right: 65px;
+}
+
+/* Services two */
+.servicesTwo {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	/* max-height: 520px; */
+	/* margin-top: 36px; */
+	/* margin-bottom: 58px; */
+}
+
+.servicesTwo .content {
+	max-width: 445px;
+}
+
+.servicesTwo .content p {
+	font-size: 0.875rem;
+}
+
+.servicesTwoImage {
+	margin-right: 50px;
+}
+
+.aboutServicesTwo {
+	max-width: 190px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+/* PRICING */
+/* Pricing Section */
+.pricingSection {
+	height: 131px;
+	margin-top: 90px;
+}
+
+/* Cards */
+.pricingCards {
+	max-width: 1132px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: 55px;
+	justify-content: space-around;
+	margin-top: 31px;
+	margin-bottom: 70px;
+}
+
+.pricingCardsItem {
+	width: 340px;
+	/* margin-right: 55px; */
+	/* max-height: 820px; */
+	/* box-shadow: (163, 163, 163, 0.25); */
+	/* box-shadow: (0px 4px 8px rgba(163, 163, 163, 0.25)); */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 30px;
+}
+
+.packageType {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #3b4b5b;
+	/* padding: 1px 26px; */
+	height: 50px;
+	width: 100px;
+	border-radius: 25px 0px 0px 25px;
+	color: white;
+}
+
+.perMonth {
+	font-size: 1.125rem;
+}
+
+.pricingCardsItem .content > div {
+	display: flex;
+	align-items: center;
+	max-height: 26px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.pricingCardsItem h2 {
+	font-size: 3.5rem;
+	margin-bottom: 41px;
+	margin-top: 35px;
+}
+
+.pricingCardsIcon {
+	font-size: 26px;
+	margin-right: 8px;
+	color: #28b440;
+}
+
+.pricingCardsIcon .red {
+	color: #f43319;
+}
+
+.pricingCardsBtnContainer {
+	margin: auto;
+	margin-top: 37px;
+}
+
+.pricingCardsBtn {
+	width: 312px;
+	background-color: #3b4b5b;
+	color: #ffffff;
+	outline: none;
+	border: none;
+	padding: 12px 20px;
+	margin-top: 27px;
+}
+
+/* WHY CHOOSE MINTY */
+.whyMinty {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	/* max-height: 622px; */
+	margin-top: 54px;
+	max-width: 1072px;
+}
+
+.whyMinty .content {
+	max-width: 572px;
+	max-height: 356px;
+}
+
+.whyMintySubHeading {
+	font-size: 1.5em;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+	width: 100%;
+	/* height: 788px; */
+	/* margin: 70px auto; */
+}
+
+.testimonials h1 {
+	text-align: center;
+	line-height: 48px;
+	margin-top: 103px;
+	margin-bottom: 26px;
+}
+
+.testimonialCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 90px;
+	/* align-items: center; */
+}
+
+.testimonialCardItem {
+	max-width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 24px;
+}
+
+/* PRE FOOTER */
+.preFooter {
+	background: #f2f8ff;
+	width: 100%;
+	max-height: 273px;
+	padding: 30px;
+	text-align: center;
+}
+
+.preFooter .content {
+	max-width: 540px;
+	margin: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.preFooterIcon {
+	font-size: 63.59px;
+}
+
+/* FOOTER */
+.footer {
+	/* width: 80%; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer3 {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer2, .footer3 {
+	margin-top: 75px;
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+	height: 1em;
+	margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+	/* .grid {
+		width: 100%;
+		flex-direction: column;
+	} */
+}
+
+/* TABLET VIEW */
+@media screen and (max-width: 768px) {
+	.scheduleACallBtn {
+		width: 130px;
+		font-size: 0.775rem;
+		height: 32px;
+		background-color: #015bd7;
+		color: #ffffff;
+		outline: inherit;
+		border: none;
+		font-weight: 500;
+		font-family: "Poppins", sans-serif !important;
+		cursor: pointer;
+	}
+
+	.scheduleACallBtn:hover {
+		background: transparent;
+		border: 1px solid #3b4b5b;
+		color: #015bd7;
+	}
+
+	/* LEARN MORE BUTTON LIGHT THEME */
+	.learnMoreBtn {
+		margin-right: 16px;
+		background-color: transparent;
+		color: #000000;
+		font-weight: 500;
+		width: 130px;
+		font-size: 0.775rem;
+		height: 32px;
+		/* outline: #000000; */
+		/* border: none; */
+		border: 1px solid #3b4b5b;
+		font-family: "Poppins", sans-serif !important;
+		cursor: pointer;
+	}
+
+	.metrics {
+		margin-top: -30px;
+	}
+
+	.metricsCard {
+		max-height: 90px;
+		width: 200px;
+	}
+
+	.metricsCard h2 {
+		font-size: 1rem;
+	}
+
+	.pitchDeck {
+		padding-top: 10px;
+	}
+
+	.pitchDeck .pitchDeckCard {
+		padding: 30px;
+	}
+
+	.pitchDeck .pitchDeckCard h2 {
+		font-size: 1.1rem;
+	}
+
+	.pitchDeck .pitchDeckCard p {
+		font-size: 0.875rem;
+	}
+
+	.content h1,
+	.content p,
+	.aboutServicesOne,
+	.aboutServicesTwo {
+		text-align: center;
+	}
+
+	.servicesTwo {
+		margin-bottom: 20px;
+	}
+
+	.pricingSection h4 {
+		font-size: 0.875rem;
+		text-align: center;
+	}
+
+	.pricingSection h2 {
+		font-size: 1.8rem;
+		text-align: center;
+	}
+
+	.pricingCardsItem {
+		margin-top: 30px;
+	}
+
+	.pricingCardsItem .content p {
+		font-size: 0.875rem;
+	}
+
+	.pricingCardsIcon {
+		font-size: 20px;
+	}
+
+	.pricingCardsItem h2 {
+		font-size: 2.5rem;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.whyMinty {
+		margin-top: 100;
+	}
+
+	.testimonials h1 {
+		margin-top: 40;
+		margin-bottom: 60px;
+	}
+
+	.testimonialCardItem {
+		margin-bottom: 40px;
+	}
+
+	.heroContent h1 {
+		max-width: 650px;
+		margin: auto;
+		margin-top: 50px;
+		font-size: 3rem;
+	}
+
+	.heroContent p {
+		margin-top: 20px;
+	}
+
+	.mobileNavBtn {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav {
+		margin-top: 25px;
+		/* align-items: baseline; */
+	}
+
+	.navLinks {
+		position: absolute;
+		left: 0;
+		top: 8vh;
+		height: 89vh;
+		background-color: #3b4b5b;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 40%;
+		transform: translateX(-100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.navLinks li {
+		opacity: 0;
+	}
+
+	.navActive {
+		transform: translateX(0);
+	}
+}
+
+/* MOBILE SCREENS */
+@media screen and (max-width: 425px) {
+	.metrics {
+	}
+
+	.metricsCard {
+	}
+
+	.metricsCard h2 {
+	}
+
+	.pitchDeck {
+		padding: 0 40px;
+	}
+
+	.pitchDeck .pitchDeckCard {
+	}
+
+	.pitchDeck .pitchDeckCard h2 {
+	}
+
+	.pitchDeck .pitchDeckCard p {
+	}
+
+	.content h1,
+	.content p,
+	.aboutServicesOne,
+	.aboutServicesTwo {
+		text-align: center;
+	}
+
+	.services0ne .content {
+		padding: 0 40px;
+	}
+
+	.aboutServicesOne {
+		margin-right: 0;
+	}
+
+	.aboutServicesTwo {
+		margin-right: 0;
+	}
+
+	.servicesTwo {
+		padding: 0 40px;
+	}
+
+	.pricingSection h4 {
+	}
+
+	.pricingSection h2 {
+	}
+
+	.pricingCardsItem {
+	}
+
+	.pricingCardsItem .content p {
+	}
+
+	.pricingCardsIcon {
+	}
+
+	.pricingCardsItem h2 {
+	}
+
+	.whyMinty {
+		padding: 0 40px;
+	}
+
+	.testimonials h1 {
+		font-size: 1.5rem;
+		margin-top: 190px;
+		text-align: center;
+		padding: 0 40px;
+		margin-bottom: 40px;
+		line-height: 1.3;
+		/* max-width: 390px; */
+	}
+
+	.testimonialCardItem {
+	}
+
+	.heroContent h1 {
+		font-size: 2.5rem;
+		max-width: 370px;
+		line-height: 1.1;
+	}
+
+	.heroContent p {
+		font-size: 0.875rem;
+		max-width: 370px;
+	}
+
+	.footer1, .footer2, .footer3 {
+		min-width: 365px;
+		margin-top: 10px;
+	}
 }

@@ -1,0 +1,19 @@
+/* PRE FOOTER */
+.preFooter {
+	background: #f2f8ff;
+	width: 100%;
+	max-height: 273px;
+	padding: 30px;
+	text-align: center;
+}
+
+.preFooter .content {
+	max-width: 540px;
+	margin: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.preFooterIcon {
+	font-size: 63.59px;
+}
