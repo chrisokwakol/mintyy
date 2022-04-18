@@ -1,3 +1,22 @@
+/* #tsparticles {
+	height: 100vh!important;
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.nav .heroContent {
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100
+} */
+
 /* MOBILE NAV MENU */
 .mobileNavBtn {
 	display: none;
@@ -77,8 +96,11 @@
 /* HEADER */
 .header {
 	background-color: #eef6fe;
+	/* background: transparent; */
+	/* position: relative; */
 	height: 100vh;
 	width: 100%;
+	/* position: relative; */
 }
 
 .nav {

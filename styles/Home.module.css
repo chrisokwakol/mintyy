@@ -12,142 +12,7 @@
 	align-items: center;
 }
 
-/* MOBILE NAV MENU */
-.mobileNavBtn {
-	display: none;
-	font-size: 30px;
-	color: #3b4b5b;
-}
 
-/* END MOBILE NAV MENU */
-
-.navLinks .active {
-	color: red;
-	text-decoration: none;
-}
-
-.navLinks a:hover,
-.navLinks a:focus,
-.navLinks a:active {
-	text-decoration: underline;
-}
-
-.title {
-	margin: 0;
-	line-height: 1.15;
-	font-size: 4rem;
-}
-
-.code {
-	background: #fafafa;
-	border-radius: 5px;
-	padding: 0.75rem;
-	font-size: 1.1rem;
-	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-		Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-/* SCHEDULE A CALL BUTTON LIGHT THEME */
-.scheduleACallBtn {
-	height: 36px;
-	width: 173px;
-	background-color: #015bd7;
-	color: #ffffff;
-	outline: inherit;
-	border: none;
-	font-weight: 500;
-	font-size: 1rem;
-	font-family: "Poppins", sans-serif !important;
-	cursor: pointer;
-}
-
-.scheduleACallBtn:hover {
-	background: transparent;
-	border: 1px solid #3b4b5b;
-	color: #015bd7;
-}
-
-/* LEARN MORE BUTTON LIGHT THEME */
-.learnMoreBtn {
-	height: 36px;
-	width: 173px;
-	margin-right: 16px;
-	background-color: transparent;
-	color: #000000;
-	font-size: 1rem;
-	font-weight: 500;
-	/* outline: #000000; */
-	/* border: none; */
-	border: 1px solid #3b4b5b;
-	font-family: "Poppins", sans-serif !important;
-	cursor: pointer;
-}
-
-.learnMoreBtn:hover {
-	background: #015bd7;
-	color: #ffffff;
-}
-
-/* HEADER */
-.header {
-	background-color: #eef6fe;
-	height: 100vh;
-	width: 100%;
-}
-
-.nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.navLinks {
-	display: flex;
-	padding: 0;
-}
-
-.navLinks li {
-	list-style: none;
-	margin: 16px;
-	font-weight: 500;
-}
-
-.headerBtns {
-	display: flex;
-	padding: 40px;
-	justify-content: center;
-}
-
-.heroContent {
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	/* align-items: center; */
-	/* justify-content: center; */
-	max-width: 730px;
-	text-align: center;
-	margin-top: 30px;
-}
-/* 
-.heroContent > div {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-} */
-
-.heroContent p {
-	max-width: 540px;
-	margin: auto;
-}
-
-.heroContent h1 {
-	font-size: 3.5rem;
-	line-height: 60px;
-	/* margin: 24px; */
-	max-width: 730px;
-}
 
 /* METRICS */
 /* Description */
@@ -215,7 +80,8 @@
 	/* border-radius: 10px; */
 	transition: color 0.15s ease, border-color 0.15s ease;
 	max-width: 380px;
-	max-height: 380px;
+	/* max-height: 380px; */
+	height: auto;
 	background-color: #eef6fe;
 }
 
@@ -241,6 +107,9 @@
 	font-size: 2rem;
 	color: "#3B4B5B";
 	margin-bottom: 20px;
+	/* background: coral;
+    padding: 30px;
+    border-radius: 50px; */
 }
 
 /* SERVICES */
@@ -257,13 +126,23 @@
 	max-width: 469px;
 }
 
-.services0ne .content h1 {
+.servicesOneCTA {
+	display: flex;
+}
+
+.servicesOneTitle {
 	font-size: 2.5rem;
 }
 
 .services0ne .content p,
 .aboutServices a {
 	font-size: 0.875rem;
+}
+
+.aboutServicesOne a {
+	font-size: 0.875rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .aboutServices p {
@@ -315,6 +194,22 @@
 	margin-top: 90px;
 }
 
+.pricingSection h4 {
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 6px;
+}
+
+.textBold {
+	font-weight: 600;
+}
+
+.pricingSection h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-top: 6px;
+}
+
 /* Cards */
 .pricingCards {
 	max-width: 1132px;
@@ -331,9 +226,7 @@
 	width: 340px;
 	/* margin-right: 55px; */
 	/* max-height: 820px; */
-	/* box-shadow: (163, 163, 163, 0.25); */
-	/* box-shadow: (0px 4px 8px rgba(163, 163, 163, 0.25)); */
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0px 4px 8px rgba(163, 163, 163, 0.25);
 	padding: 30px;
 }
 
@@ -363,7 +256,7 @@
 
 .pricingCardsItem h2 {
 	font-size: 3.5rem;
-	margin-bottom: 41px;
+	margin-bottom: 10px;
 	margin-top: 35px;
 }
 
@@ -398,7 +291,8 @@
 	flex-wrap: wrap-reverse;
 	justify-content: center;
 	/* max-height: 622px; */
-	margin-top: 54px;
+	margin-top: 15px;
+    margin-bottom: 40px;
 	max-width: 1072px;
 }
 
@@ -407,8 +301,24 @@
 	max-height: 356px;
 }
 
+.whyMinty .content h1 {
+	font-size: 2.5rem;
+}
+
 .whyMintySubHeading {
 	font-size: 1.5em;
+}
+
+.whyMintyCTA {
+	display: flex;
+	align-items: center;
+	font-size: 1.125rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.whyMintyCTAIcon {
+	margin-left: 10px;
 }
 
 /* TESTIMONIALS */
@@ -420,9 +330,10 @@
 
 .testimonials h1 {
 	text-align: center;
+	margin-bottom: 70px;
 	line-height: 48px;
 	margin-top: 103px;
-	margin-bottom: 26px;
+	font-size: 2.5rem;
 }
 
 .testimonialCards {
@@ -435,8 +346,21 @@
 
 .testimonialCardItem {
 	max-width: 350px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	box-shadow:  0px 2px rgba(0, 101, 242, 0.1), 0px 1px 4px rgba(0, 101, 242, 0.1);
 	padding: 24px;
+}
+
+.testimonialCardItem h4 {
+	margin-bottom: 0;
+}
+
+.clientTitle {
+	margin-top: 0;
+}
+
+.clientReview {
+	margin-top: 58px;
 }
 
 /* PRE FOOTER */

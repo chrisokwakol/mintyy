@@ -12,6 +12,7 @@ import {
 import {
 	faCircleCheck,
 	faCircleXmark,
+	faCaretSquareRight,
 } from "@fortawesome/free-regular-svg-icons";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -36,7 +37,7 @@ export default function Home() {
 
 			<main className={styles.main}>
 				{/* HEADER */}
-				<Header title="We Enhance Social Media Management and Marketing"/>
+				<Header title="We Enhance Social Media Management and Marketing" />
 
 				{/* METRICS */}
 				{/* <span>And were just getting started</span> */}
@@ -109,7 +110,7 @@ export default function Home() {
 				{/* Services section 1 */}
 				<div className={styles.servicesOne}>
 					<div className={styles.content}>
-						<h1>
+						<h1 className={styles.servicesOneTitle}>
 							Grow Your Project
 							<br /> with Minty Solutions
 						</h1>
@@ -121,7 +122,13 @@ export default function Home() {
 									Our in-house designers and video editors are at your disposal
 									for any graphical or video assets you need.
 								</p>
-								<a href="">Take a look at a few examples</a>
+								<div className={styles.servicesOneCTA}>
+									<a href="">Take a look at a few examples</a>
+									{/* <FontAwesomeIcon
+										icon={faCaretSquareRight}
+										className={styles.whyMintyCTAIcon}
+									/>{" "} */}
+								</div>
 							</div>
 							<div className={styles.aboutServicesTwo}>
 								<h4>Management</h4>
@@ -134,24 +141,14 @@ export default function Home() {
 						</div>
 					</div>
 					<div>
-						<Image
-							src="/images/01-min.png"
-							width={574}
-							height={402}
-							alt={""}
-						/>
+						<Image src="/images/01-min.png" width={574} height={402} alt={""} />
 					</div>
 				</div>
 
 				{/* Services section 2 */}
 				<div className={styles.servicesTwo}>
 					<div className={styles.servicesTwoImage}>
-						<Image
-							src="/images/02-min.png"
-							width={714}
-							height={447}
-							alt={""}
-						/>
+						<Image src="/images/02-min.png" width={714} height={447} alt={""} />
 					</div>
 					<div className={styles.content}>
 						<h1>
@@ -188,7 +185,10 @@ export default function Home() {
 
 				{/* PRICING SECTION */}
 				<div className={styles.pricingSection}>
-					<h4>All Plans are Fully Customizable</h4>
+					<h4>
+						All Plans are{" "}
+						<span className={styles.textBold}>Fully Customizable</span>
+					</h4>
 					<h2>OUR PRICING PLANS</h2>
 				</div>
 				{/* Pricing Cards */}
@@ -536,9 +536,17 @@ export default function Home() {
 						<p className={styles.whyMintySubHeading}>
 							Work With a Dedicated Agency
 						</p>
-						<p>See a Comparison between Minty and Other Firms</p>
+						<a href="" className={styles.whyMintyCTA}>
+							See a Comparison between Minty and Other Firms{" "}
+							<FontAwesomeIcon
+								icon={faCaretSquareRight}
+								className={styles.whyMintyCTAIcon}
+							/>{" "}
+						</a>
 						<p>
-							Minty Marketing Solutions LTD. is a registered company in the UK.{" "}
+							Minty Marketing Solutions LTD. is a{" "}
+							<span className={styles.textBold}>registered</span> company in the
+							UK.{" "}
 						</p>
 						<p>
 							You will personally be assigned a full team of up to 15 dedicated
@@ -548,12 +556,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div>
-						<Image
-							src="/images/03-min.png"
-							width={450}
-							height={402}
-							alt={""}
-						/>
+						<Image src="/images/03-min.png" width={450} height={402} alt={""} />
 					</div>
 				</div>
 
@@ -563,21 +566,24 @@ export default function Home() {
 					<div className={styles.testimonialCards}>
 						<div className={styles.testimonialCardItem}>
 							<Image
-								src="/Testimonial/Vending_Machines_NFT/image.png"
+								src="/images/Vending.png"
+								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}
 								height={60}
 							/>
 							<h4>Aza</h4>
 							<div>
-								<p>Founder | Vending Machines NFT</p>
+								<p className={styles.clientTitle}>
+									Founder | Vending Machines NFT
+								</p>
 								<div>
 									{/* <FontAwesomeIcon
 										icon="fa-brands fa-tiktok"
 										className={styles.pitchDeckIcon}
 										style={{ color: "#015BD7", marginBottom: "20px" }}
 									/>{" "} */}
-									<p>
+									<p className={styles.clientReview}>
 										We have been very happy with Minty Solutions since we
 										started together. Their social media marketing work is
 										really incredible. Continuous scavenger hunt or poker games
@@ -590,21 +596,24 @@ export default function Home() {
 						</div>
 						<div className={styles.testimonialCardItem}>
 							<Image
-								src="/Testimonial/Vending_Machines_NFT/image.png"
+								src="/images/Vending.png"
+								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}
 								height={60}
 							/>
 							<h4>Aza</h4>
 							<div>
-								<p>Founder | Vending Machines NFT</p>
+								<p className={styles.clientTitle}>
+									Founder | Vending Machines NFT
+								</p>
 								<div>
 									{/* <FontAwesomeIcon
 										icon="fa-brands fa-tiktok"
 										className={styles.pitchDeckIcon}
 										style={{ color: "#015BD7", marginBottom: "20px" }}
 									/>{" "} */}
-									<p>
+									<p className={styles.clientReview}>
 										We have been very happy with Minty Solutions since we
 										started together. Their social media marketing work is
 										really incredible. Continuous scavenger hunt or poker games
@@ -617,21 +626,24 @@ export default function Home() {
 						</div>
 						<div className={styles.testimonialCardItem}>
 							<Image
-								src="/Testimonial/Vending_Machines_NFT/image.png"
+								src="/images/Vending.png"
+								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}
 								height={60}
 							/>
 							<h4>Aza</h4>
 							<div>
-								<p>Founder | Vending Machines NFT</p>
+								<p className={styles.clientTitle}>
+									Founder | Vending Machines NFT
+								</p>
 								<div>
 									{/* <FontAwesomeIcon
 										icon="fa-brands fa-tiktok"
 										className={styles.pitchDeckIcon}
 										style={{ color: "#015BD7", marginBottom: "20px" }}
 									/>{" "} */}
-									<p>
+									<p className={styles.clientReview}>
 										We have been very happy with Minty Solutions since we
 										started together. Their social media marketing work is
 										really incredible. Continuous scavenger hunt or poker games

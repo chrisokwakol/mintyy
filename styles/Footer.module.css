@@ -13,6 +13,15 @@
 	flex-direction: column;
 }
 
+.footer1 ul {
+	font-weight: 200;
+	font-size: 0.875rem;
+}
+
+.footer1 h2 {
+	margin-left: 39px;
+}
+
 .footer2 {
 	display: flex;
 	flex-direction: column;
@@ -21,6 +30,10 @@
 .footer3 {
 	display: flex;
 	flex-direction: column;
+}
+
+.footer3 ul {
+	font-size: 0.875rem;
 }
 
 .footer2, .footer3 {
