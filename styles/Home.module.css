@@ -182,7 +182,7 @@
 }
 
 .servicesTwo {
-	font-size: 2.5rem;
+	/* font-size: 2.5rem; */
 }
 
 .servicesTwoImage {
@@ -704,5 +704,11 @@
 	.footer1, .footer2, .footer3 {
 		min-width: 365px;
 		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.pitchDeck {
+		padding: 0 20px;
 	}
 }

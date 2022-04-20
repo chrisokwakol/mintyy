@@ -1,6 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
+import {
+	faRocket,
+	faCaretSquareRight,
+} from "@fortawesome/free-regular-svg-icons";
 import styles from "../styles/PreFooter.module.css";
 
 function PreFooter() {
@@ -12,10 +15,14 @@ function PreFooter() {
 					Get Seen With Us and Take Your Project to the Next Level Now to See
 					Results!
 				</h4>
-				<a>Arrange a Meeting</a>
+				<a>Arrange a Meeting</a>{" "}
+				{/* <FontAwesomeIcon
+					icon={faCaretSquareRight}
+					className={styles.whyMintyCTAIcon}
+				/>{" "} */}
 			</div>
 		</div>
 	);
 }
- 
+
 export default PreFooter;
