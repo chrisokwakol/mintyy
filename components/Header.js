@@ -41,16 +41,16 @@ const Header = (props) => {
 				</div> */}
 				<ul className={navLinksClasses.join(" ")}>
 					<li>
-						<a href="http://localhost:3000/">Home</a>
+						<a href="https://mintysolutions.vercel.app/">Home</a>
 					</li>
 					<li>
-						<a href="http://localhost:3000/services">Services</a>
+						<a href="https://mintysolutions.vercel.app/services">Services</a>
 					</li>
 					<li>
-						<a href="http://localhost:3000/casestudies">Case Studies</a>
+						<a href="https://mintysolutions.vercel.app/casestudies">Case Studies</a>
 					</li>
 					<li>
-						<a href="http://localhost:3000/contact">Contact</a>
+						<a href="https://mintysolutions.vercel.app/contact">Contact</a>
 					</li>
 				</ul>
 				{/* <Image
