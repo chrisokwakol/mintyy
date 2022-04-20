@@ -1,8 +1,11 @@
+import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { Squash as Hamburger, Squash } from "hamburger-react";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Header = (props) => {
 	const particlesInit = async (main) => {
@@ -17,13 +20,26 @@ const Header = (props) => {
 	const particlesLoaded = (container) => {
 		console.log(container);
 	};
+
+	const [navbarOpen, setNavbarOpen] = useState(false);
+	const burgerToggle = () => {
+		setNavbarOpen((prev) => !prev);
+	};
+
+	const navLinksClasses = [
+		styles.navLinks,
+		`${navbarOpen ? styles.navActive : ""}`,
+	];
 	return (
 		<header className={styles.header}>
 			<nav className={styles.nav}>
-				<div className={styles.mobileNavBtn} onClick={() => navSlide}>
-					<FontAwesomeIcon icon={faBars} />{" "}
+				<div onClick={burgerToggle}>
+					<HamburgerMenu />
 				</div>
-				<ul className={styles.navLinks}>
+				{/* <div className={styles.mobileNavBtn} onClick={() => navSlide}>
+					<FontAwesomeIcon icon={faBars} />{" "}
+				</div> */}
+				<ul className={navLinksClasses.join(" ")}>
 					<li>
 						<a href="http://localhost:3000/">Home</a>
 					</li>
@@ -57,7 +73,6 @@ const Header = (props) => {
 					<button className={styles.scheduleACallBtn}>Schedule a Call!</button>
 				</div>
 			</div>
-			
 		</header>
 	);
 };

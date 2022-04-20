@@ -124,10 +124,10 @@ export default function Home() {
 								</p>
 								<div className={styles.servicesOneCTA}>
 									<a href="">Take a look at a few examples</a>
-									{/* <FontAwesomeIcon
+									<FontAwesomeIcon
 										icon={faCaretSquareRight}
 										className={styles.whyMintyCTAIcon}
-									/>{" "} */}
+									/>{" "}
 								</div>
 							</div>
 							<div className={styles.aboutServicesTwo}>

@@ -29,6 +29,9 @@ function CaseStudies() {
 			<main className={styles.main}>
 				{/* HEADER */}
 				<Header title="Case Studies"/>
+				<p>Comparison as of April 2022</p>
+				<h1>How Minty Compares to  Other Marketing Agencies</h1>
+				
 
 				{/* PRE FOOTER */}
 				<PreFooter />

@@ -17,15 +17,6 @@
     z-index: 100
 } */
 
-/* MOBILE NAV MENU */
-.mobileNavBtn {
-	display: none;
-	font-size: 30px;
-	color: #3b4b5b;
-}
-
-/* END MOBILE NAV MENU */
-
 .navLinks .active {
 	color: red;
 	text-decoration: none;
@@ -155,4 +146,73 @@
 	line-height: 60px;
 	/* margin: 24px; */
 	max-width: 730px;
+}
+
+@media screen and (max-width:768px) {
+	.nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 20px;
+	}
+
+	.navLinks {
+		position: absolute;
+		left: 0;
+		top: 8vh;
+		height: 89vh;
+		background-color: #3b4b5b;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 40%;
+		transform: translateX(-100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.navLinks li {
+		/* opacity: 0; */
+	}
+
+	.navActive {
+		transform: translateX(0);
+	}
+
+	.heroContent h1 {
+		margin-bottom: 20px;
+	}
+
+	.headerBtns {
+		padding: 30px;
+	}
+}
+
+@media  screen and (max-width: 425px) {
+	.heroContent {
+		max-width: 370px;
+	}
+
+	.heroContent h1 {
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+
+	.heroContent p {
+		font-size: 0.875rem;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.scheduleACallBtn {
+		height: 30px;
+		width: 140px;
+		font-size: 0.875rem;
+	}
+
+	.learnMoreBtn {
+		height: 30px;
+		width: 140px;
+		font-size: 0.875rem;
+	}
 }
