@@ -13,9 +13,19 @@
 	padding-bottom: 32px;
 }
 
+.preFooterCTA {
+	font-size: 1rem;
+}
+
 .preFooterIcon {
-	font-size: 63.59px;
+	/* font-size: 63.59px; */
 } 
+
+@media screen and(max-width:768px) {
+	.preFooterCTA {
+		font-size: 0.875rem;
+	}
+}
 
 @media screen and (max-width: 425px) {
 	.preFooter {

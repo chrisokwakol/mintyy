@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faRocket,
 	faCaretSquareRight,
+	
 } from "@fortawesome/free-regular-svg-icons";
 import styles from "../styles/PreFooter.module.css";
 
@@ -11,18 +12,20 @@ function PreFooter() {
 		<div className={styles.preFooter}>
 			<div className={styles.content}>
 				<FontAwesomeIcon icon={faRocket} className={styles.preFooterIcon} />{" "}
+				{/* <FontAwesomeIcon
+					icon={faHandRock}
+				/>{" "} */}
 				<h4>
 					Get Seen With Us and Take Your Project to the Next Level Now to See
 					Results!
 				</h4>
-				<a>Arrange a Meeting</a>{" "}
-				{/* <FontAwesomeIcon
+				<a href="#" className={styles.preFooterCTA}>Arrange a Meeting</a>{" "}
+				<FontAwesomeIcon
 					icon={faCaretSquareRight}
-					className={styles.whyMintyCTAIcon}
-				/>{" "} */}
+				/>{" "}
 			</div>
 		</div>
 	);
-}
+} 
 
 export default PreFooter;

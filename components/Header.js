@@ -47,7 +47,9 @@ const Header = (props) => {
 						<a href="https://mintysolutions.vercel.app/services">Services</a>
 					</li>
 					<li>
-						<a href="https://mintysolutions.vercel.app/casestudies">Case Studies</a>
+						<a href="https://mintysolutions.vercel.app/casestudies">
+							Case Studies
+						</a>
 					</li>
 					<li>
 						<a href="https://mintysolutions.vercel.app/contact">Contact</a>
@@ -61,16 +63,20 @@ const Header = (props) => {
 						/> */}
 				<button className={styles.scheduleACallBtn}>Schedule a Call!</button>
 			</nav>
-			<div className={styles.heroContent}>
-				<h1>{props.title}</h1>
-				{/* <h1>We Enhance Social Media Management and Marketing</h1> */}
-				<p>
-					Welcome to Minty Solutions, the all-in-one digital marketing service
-					personalised to your project
-				</p>
-				<div className={styles.headerBtns}>
-					<button className={styles.learnMoreBtn}>Learn More</button>
-					<button className={styles.scheduleACallBtn}>Schedule a Call!</button>
+			<div className={styles.heroContentContainer}>
+				<div className={styles.heroContent}>
+					<h1>{props.title}</h1>
+					{/* <h1>We Enhance Social Media Management and Marketing</h1> */}
+					<p>
+						Welcome to Minty Solutions, the all-in-one digital marketing service
+						personalised to your project
+					</p>
+					<div className={styles.headerBtns}>
+						<button className={styles.learnMoreBtn}>Learn More</button>
+						<button className={styles.scheduleACallBtn}>
+							Schedule a Call!
+						</button>
+					</div>
 				</div>
 			</div>
 		</header>

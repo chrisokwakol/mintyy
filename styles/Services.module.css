@@ -10,6 +10,18 @@
 	padding-left: 20px;
 }
 
+.servicesSectionOne .content p {
+	font-size: 0.875rem;
+}
+
+.servicesSectionOne .content a {
+	font-size: 0.875rem;
+}
+
+.servicesSectionOne .content ul {
+	font-size: 0.875rem;
+}
+
 .servicesSectionTwo {
 	display: flex;
 	flex-wrap: wrap-reverse;
@@ -108,6 +120,10 @@
 	margin-bottom: 80px;
 }
 
+.servicesPageCTATwo a {
+	font-size: 1.125rem;
+}
+
 @media screen and (max-width:768px) {
 	.servicesSectionThree {
 		margin-bottom: 0;
@@ -132,8 +148,12 @@
 	.servicesPageCTAOne div > a {
 		font-size: 0.875rem;
 	}
-}
 
+	.servicesPageCTATwo a {
+		font-size: 0.875rem;
+	}
+}
+ 
 @media  screen and (max-width: 425px) {
 	.servicesSectionOne .content {
 		padding: 0 40px;
@@ -165,6 +185,10 @@
 		font-size: 0.875rem;
 	}
 
+	.servicesPageCTAOne .topTitle {
+		font-size: 0.875rem;
+	}
+
 	.servicesPageCTAOne p {
 		font-size: 0.875rem;
 	}
@@ -174,10 +198,6 @@
 	}
 
 	.servicesPageCTATwo h1 {
-		font-size: 1.7rem;
-	}
-
-	.servicesPageCTATwo a {
 		font-size: 1.7rem;
 	}
 
