@@ -39,6 +39,22 @@ const Header = (props) => {
 				{/* <div className={styles.mobileNavBtn} onClick={() => navSlide}>
 					<FontAwesomeIcon icon={faBars} />{" "}
 				</div> */}
+				{/* <ul className={navLinksClasses.join(" ")}>
+					<li>
+						<a href="http://localhost:3000/">Home</a>
+					</li>
+					<li>
+						<a href="http://localhost:3000/services">Services</a>
+					</li>
+					<li>
+						<a href="http://localhost:3000/casestudies">
+							Case Studies
+						</a>
+					</li>
+					<li>
+						<a href="http://localhost:3000/contact">Contact</a>
+					</li>
+				</ul> */}
 				<ul className={navLinksClasses.join(" ")}>
 					<li>
 						<a href="https://mintysolutions.vercel.app/">Home</a>

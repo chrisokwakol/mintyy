@@ -424,11 +424,24 @@
 	margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-	/* .grid {
-		width: 100%;
+/* SMALL LAPTOP VIEW */
+@media screen and (max-width:1024px) {
+	.whyMinty {
+		display: flex;
 		flex-direction: column;
-	} */
+	}
+
+	.testimonials h1 {
+		margin-top: 40px;
+	}
+
+	.testimonialCardItem {
+		margin-top: 40px;
+	}
+
+	.pricingCardsItem {
+		margin-top: 40px;
+	}
 }
 
 /* TABLET VIEW */

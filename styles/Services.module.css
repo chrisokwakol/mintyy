@@ -124,9 +124,20 @@
 	font-size: 1.125rem;
 }
 
+@media screen and (max-width:1024px) {
+	.servicesSectionTwo {
+		margin-top: 0px;
+	}
+
+	.servicesSectionThree {
+		margin-top: 70px;
+	}
+}
+
 @media screen and (max-width:768px) {
 	.servicesSectionThree {
 		margin-bottom: 0;
+		margin-top: 20px;
 	}
 
 	.servicesPageCTAOne {
