@@ -114,7 +114,7 @@ export default function Home() {
 							Grow Your Project
 							<br /> with Minty Solutions
 						</h1>
-						<p>Tired of paying 50 different freelancers?</p>
+						<p className={styles.servicesOneHook}>Tired of paying 50 different freelancers?</p>
 						<div className={styles.aboutServices}>
 							<div className={styles.aboutServicesOne}>
 								<h4>Design</h4>
