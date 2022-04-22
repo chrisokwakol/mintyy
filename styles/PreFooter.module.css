@@ -2,7 +2,7 @@
 .preFooter {
 	background: #f2f8ff;
 	width: 100%;
-	max-height: 273px;
+	/* max-height: 273px; */
 	text-align: center;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .preFooterIcon {
-	/* font-size: 63.59px; */
+	font-size: 53.59px;
 } 
 
 @media screen and(max-width:768px) {

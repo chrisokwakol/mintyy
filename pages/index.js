@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { GrUserManager } from "react-icons/gr";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBarsProgress,
@@ -14,6 +15,9 @@ import {
 	faCircleXmark,
 	faCaretSquareRight,
 } from "@fortawesome/free-regular-svg-icons";
+import { FaTwitter } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PreFooter from "../components/PreFooter";
@@ -26,6 +30,21 @@ export default function Home() {
 		nav.classList.toggle("navActive");
 	};
 
+	const title = `We ${(
+		<Typewriter
+			onInit={(typewriter) => {
+				typewriter
+
+					.typeString("Enhance")
+
+					.pauseFor(1000)
+					.deleteAll()
+					.typeString("Optimize")
+					.start();
+			}}
+		/>
+	)} Social Media Management and Marketing`;
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -36,9 +55,8 @@ export default function Home() {
 			</Head>
 
 			<main className={styles.main}>
-				{/* HEADER */}
+				{/* <Header title={title} /> */}
 				<Header title="We Enhance Social Media Management and Marketing" />
-
 				{/* METRICS */}
 				{/* <span>And were just getting started</span> */}
 				<div className={styles.metricsSection}>
@@ -68,6 +86,7 @@ export default function Home() {
 				{/* PITCH DECK */}
 				<div className={styles.pitchDeck}>
 					<div className={styles.pitchDeckCard}>
+						{/* <GrUserManager className={styles.pitchDeckIcon} /> */}
 						<FontAwesomeIcon
 							icon={faBarsProgress}
 							className={styles.pitchDeckIcon}
@@ -114,7 +133,9 @@ export default function Home() {
 							Grow Your Project
 							<br /> with Minty Solutions
 						</h1>
-						<p className={styles.servicesOneHook}>Tired of paying 50 different freelancers?</p>
+						<p className={styles.servicesOneHook}>
+							Tired of paying 50 different freelancers?
+						</p>
 						<div className={styles.aboutServices}>
 							<div className={styles.aboutServicesOne}>
 								<h4>Design</h4>
@@ -578,11 +599,7 @@ export default function Home() {
 									Founder | Vending Machines NFT
 								</p>
 								<div>
-									{/* <FontAwesomeIcon
-										icon="fa-brands fa-tiktok"
-										className={styles.pitchDeckIcon}
-										style={{ color: "#015BD7", marginBottom: "20px" }}
-									/>{" "} */}
+									<FaTiktok /> <FaTwitter />
 									<p className={styles.clientReview}>
 										We have been very happy with Minty Solutions since we
 										started together. Their social media marketing work is
@@ -590,6 +607,31 @@ export default function Home() {
 										keep our community engaged. Their promo video and graphics
 										team is just amazing! Would highly recommend this very
 										dedicated team to handle all your marketing needs.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div className={styles.testimonialCardItem}>
+							<Image
+								src="/images/Vending.png"
+								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
+								alt=""
+								width={60}
+								height={60}
+							/>
+							<h4>Donbash</h4>
+							<div>
+								<p className={styles.clientTitle}>Founder | Puzzle Prize NFT</p>
+								<div>
+									<FaTiktok /> <FaTwitter />
+									<p className={styles.clientReview}>
+										Minty really helped us get our collabs going! They have an
+										expansive network of projects that allows them to bring
+										collabs everyday. On top of that, their Twitter management
+										and content creation was amazing. Communication was really
+										there throughout the whole process and they were very
+										transparent.
 									</p>
 								</div>
 							</div>
@@ -608,41 +650,7 @@ export default function Home() {
 									Founder | Vending Machines NFT
 								</p>
 								<div>
-									{/* <FontAwesomeIcon
-										icon="fa-brands fa-tiktok"
-										className={styles.pitchDeckIcon}
-										style={{ color: "#015BD7", marginBottom: "20px" }}
-									/>{" "} */}
-									<p className={styles.clientReview}>
-										We have been very happy with Minty Solutions since we
-										started together. Their social media marketing work is
-										really incredible. Continuous scavenger hunt or poker games
-										keep our community engaged. Their promo video and graphics
-										team is just amazing! Would highly recommend this very
-										dedicated team to handle all your marketing needs.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className={styles.testimonialCardItem}>
-							<Image
-								src="/images/Vending.png"
-								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
-								alt=""
-								width={60}
-								height={60}
-							/>
-							<h4>Aza</h4>
-							<div>
-								<p className={styles.clientTitle}>
-									Founder | Vending Machines NFT
-								</p>
-								<div>
-									{/* <FontAwesomeIcon
-										icon="fa-brands fa-tiktok"
-										className={styles.pitchDeckIcon}
-										style={{ color: "#015BD7", marginBottom: "20px" }}
-									/>{" "} */}
+									<FaTiktok /> <FaTwitter />
 									<p className={styles.clientReview}>
 										We have been very happy with Minty Solutions since we
 										started together. Their social media marketing work is

@@ -33,6 +33,14 @@
 	flex-direction: column;
 }
 
+.footer2 ul li {
+	font-size: 0.775rem;
+}
+
+.footer3 ul li {
+	font-size: 0.775rem;
+}
+
 .footer3 {
 	display: flex;
 	flex-direction: column;
