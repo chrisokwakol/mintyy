@@ -1,6 +1,6 @@
 .HamburgerMenu {
     display: none;
-    color: #fff;
+    color: #333;
 }
 
 @media screen and (max-width: 768px) {
