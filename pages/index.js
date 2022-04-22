@@ -614,7 +614,7 @@ export default function Home() {
 
 						<div className={styles.testimonialCardItem}>
 							<Image
-								src="/images/Vending.png"
+								src="/images/Puzzle_NFT.png"
 								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}

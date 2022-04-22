@@ -82,7 +82,7 @@
 	max-width: 380px;
 	/* max-height: 380px; */
 	height: auto;
-	background-color: #eef6fe;
+	background-color: #FAF9F6;
 }
 
 .card:hover,
@@ -167,6 +167,11 @@
 	/* max-height: 520px; */
 	/* margin-top: 36px; */
 	/* margin-bottom: 58px; */
+	background: #FAF9F6;
+    color: #333;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .servicesTwo .content {
@@ -300,7 +305,11 @@
 	/* max-height: 622px; */
 	margin-top: 15px;
     margin-bottom: 40px;
-	max-width: 1072px;
+	/* max-width: 1072px; */
+	background: #FAF9F6;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 131px;
 }
 
 .whyMinty .content {
@@ -564,6 +573,7 @@
 
 	.whyMinty {
 		margin-top: 100;
+		align-items: center;
 	}
 
 	.whyMintyCTA {
@@ -675,7 +685,7 @@
 	}
 
 	.servicesTwo {
-		padding: 0 40px;
+		padding: 20 40px;
 	}
 
 	.pricingSection {
@@ -683,7 +693,7 @@
 	}
 
 	.whyMinty {
-		padding: 0 40px;
+		padding: 40px;
 	}
 
 	.whyMinty .content h1 {
