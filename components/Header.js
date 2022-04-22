@@ -44,7 +44,7 @@ const Header = (props) => {
 				options={{
 					background: {
 						color: {
-							value: "#333",
+							value: "#FAF9F6",
 						},
 					},
 					fpsLimit: 120,
@@ -72,10 +72,10 @@ const Header = (props) => {
 					},
 					particles: {
 						color: {
-							value: "#ffffff",
+							value: "#000",
 						},
 						links: {
-							color: "#ffffff",
+							color: "#000",
 							distance: 150,
 							enable: true,
 							opacity: 0.5,

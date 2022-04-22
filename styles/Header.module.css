@@ -50,12 +50,12 @@
 	width: 173px;
 	margin-right: 16px;
 	background-color: transparent;
-	color: #fff;
+	color: #000;
 	font-size: 1rem;
 	font-weight: 500;
 	/* outline: #000000; */
 	/* border: none; */
-	border: 1px solid #fff;
+	border: 1px solid #000;
 	font-family: "Poppins", sans-serif !important;
 	cursor: pointer;
 }
@@ -89,7 +89,7 @@
 .navLinks {
 	display: flex;
 	padding: 0;
-	color: #fff;
+	color: #000;
 }
 
 .navLinks li {
@@ -121,7 +121,7 @@
 .heroContent p {
 	max-width: 540px;
 	margin: auto;
-	color: #fff;
+	color: #333;
 }
 
 .heroContent h1 {
@@ -129,7 +129,7 @@
 	line-height: 60px;
 	/* margin: 24px; */
 	max-width: 730px;
-	color: #fff;
+	color: #000;
 }
 
 @media screen and (max-width: 1024px) {
