@@ -550,7 +550,7 @@
 
 	.pricingCards{
 		max-width: 678px;
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}
 
 	.pricingCardsItem {
@@ -629,7 +629,6 @@
 	.content p {
 		text-align: center;
 		font-size: 0.875rem;
-		padding: 0 40px;
 	}
 
 	.content :nth-child(4) {
@@ -671,6 +670,11 @@
 		padding: 0 40px;
 	}
 
+	.servicesTwo .content p {
+		font-size: 0.875rem;
+		padding: 0 40px;
+	}
+
 	.servicesOneCTA {
 		justify-content: center;
 	}
@@ -690,7 +694,7 @@
 	}
 
 	.pricingSection {
-		margin-top: 0;
+		margin-top: 35px;
 	}
 
 	.whyMinty {
