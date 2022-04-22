@@ -11,6 +11,12 @@ import {
 	faRectangleXmark,
 	faCalendarXmark,
 } from "@fortawesome/free-regular-svg-icons";
+import { GiVendingMachine } from 'react-icons/gi';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaGlobeAmericas } from 'react-icons/fa';
+import { BsPuzzle } from 'react-icons/bs';
+import { GoRocket } from 'react-icons/go';
 import Header from "../components/Header";
 import PreFooter from "../components/PreFooter";
 import Footer from "../components/Footer";
@@ -394,14 +400,14 @@ function CaseStudies() {
 				<div className={styles.caseStudiesCards}>
 					<div className={styles.caseStudiesCardItem}>
 						<div className={styles.caseStudiesCardItemOneTop}>
-							<FontAwesomeIcon icon={faBell} />
+							<GiVendingMachine />
 							<button>Sold Out</button>
 						</div>
 						<h4>Vending Machine NFT</h4>
 						<div className={styles.socialIcons}>
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
+							<FaTwitter className={styles.socialIcon} />{" "}
+							<FaInstagram className={styles.socialIcon} />{" "}
+							<FaGlobeAmericas className={styles.socialIcon} />{" "}
 						</div>
 						<p className={styles.achievements}>Achievements</p>
 						<div>
@@ -426,14 +432,14 @@ function CaseStudies() {
 
 					<div className={styles.caseStudiesCardItem}>
 						<div className={styles.caseStudiesCardItemTwoTop}>
-							<FontAwesomeIcon icon={faBell} />
+							<BsPuzzle />
 							<button>Minting Soon</button>
 						</div>
-						<h4>Vending Machine NFT</h4>
+						<h4>Puzzle Prize NFT</h4>
 						<div className={styles.socialIcons}>
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
+							<FaTwitter className={styles.socialIcon} />{" "}
+							<FaInstagram className={styles.socialIcon} />{" "}
+							<FaGlobeAmericas className={styles.socialIcon} />{" "}
 						</div>
 						<p className={styles.achievements}>Achievements</p>
 						<div>
@@ -458,7 +464,7 @@ function CaseStudies() {
 
 					<div className={styles.caseStudiesCardItem}>
 						<div className={styles.caseStudiesCardItemThreeTop}>
-							<FontAwesomeIcon icon={faBell} />
+							<GoRocket />
 							<button>Minting Soon</button>
 						</div>
 						<h4>
@@ -466,9 +472,9 @@ function CaseStudies() {
 							NFT
 						</h4>
 						<div className={styles.socialIcons}>
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
-							<FontAwesomeIcon className={styles.socialIcon} icon={faBell} />{" "}
+							<FaTwitter className={styles.socialIcon} />{" "}
+							<FaInstagram className={styles.socialIcon} />{" "}
+							<FaGlobeAmericas className={styles.socialIcon} />{" "}
 						</div>
 						<p className={styles.achievements}>Achievements</p>
 						<div>

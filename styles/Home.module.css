@@ -629,6 +629,7 @@
 	.content p {
 		text-align: center;
 		font-size: 0.875rem;
+		padding: 0 40px;
 	}
 
 	.content :nth-child(4) {
