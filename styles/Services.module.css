@@ -176,6 +176,11 @@
 		text-align: center;
 	}
 
+	.aboutServicesSectionThree {
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.servicesSectionThree .content {
 		padding: 0 40px;
 	}
@@ -217,6 +222,11 @@
 	}
 
 	.aboutServicesSectionThree :nth-child(1) {
-		max-width: 176px;
+		max-width: 340px;
+	}
+	
+	.aboutServicesSectionThree :nth-child(2) {
+		max-width: 340px;
+		margin-top: 16px;
 	}
 }
