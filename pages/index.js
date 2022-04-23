@@ -7,8 +7,6 @@ import {
 	faBarsProgress,
 	faBezierCurve,
 	faSearchDollar,
-	faRocket,
-	faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import {
 	faCircleCheck,
@@ -23,13 +21,6 @@ import Footer from "../components/Footer";
 import PreFooter from "../components/PreFooter";
 
 export default function Home() {
-	const navSlide = () => {
-		const mobileNavBtn = document.querySelector(".mobileNavBtn");
-		const nav = document.querySelector(".navLinks");
-
-		nav.classList.toggle("navActive");
-	};
-
 	const title = `We ${(
 		<Typewriter
 			onInit={(typewriter) => {
@@ -222,9 +213,7 @@ export default function Home() {
 						<h2>
 							$1500<span className={styles.perMonth}>/month</span>
 						</h2>
-						{/* <br /> */}
 						<hr />
-						{/* <br /> */}
 						<div className={styles.content}>
 							<div>
 								<FontAwesomeIcon
@@ -318,7 +307,9 @@ export default function Home() {
 								<p>1 Full Stack Developer</p>
 							</div>
 							<div className={styles.pricingCardsBtnContainer}>
-								<button className={styles.pricingCardsBtn}>LEARN MORE</button>
+								<a href="https://mintysolutions.vercel.app/services">
+									<button className={styles.pricingCardsBtn}>LEARN MORE</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -330,9 +321,7 @@ export default function Home() {
 						<h2>
 							$2000<span className={styles.perMonth}>/month</span>
 						</h2>
-						{/* <br /> */}
 						<hr />
-						{/* <br /> */}
 						<div className={styles.content}>
 							<div>
 								<FontAwesomeIcon
@@ -431,10 +420,13 @@ export default function Home() {
 								<p>1 Full Stack Developer</p>
 							</div>
 							<div className={styles.pricingCardsBtnContainer}>
-								<button className={styles.pricingCardsBtn}>LEARN MORE</button>
+								<a href="https://mintysolutions.vercel.app/services">
+									<button className={styles.pricingCardsBtn}>LEARN MORE</button>
+								</a>
 							</div>
 						</div>
 					</div>
+					{/* Ultimate */}
 					<div className={styles.pricingCardsItem}>
 						{/* ULtimate */}
 						<div className={styles.packageType}>
@@ -443,9 +435,7 @@ export default function Home() {
 						<h2>
 							$3000<span className={styles.perMonth}>/month</span>
 						</h2>
-						{/* <br /> */}
 						<hr />
-						{/* <br /> */}
 						<div className={styles.content}>
 							<div>
 								<FontAwesomeIcon
@@ -544,7 +534,9 @@ export default function Home() {
 								<p>1 Full Stack Developer</p>
 							</div>
 							<div className={styles.pricingCardsBtnContainer}>
-								<button className={styles.pricingCardsBtn}>LEARN MORE</button>
+								<a href="https://mintysolutions.vercel.app/services">
+									<button className={styles.pricingCardsBtn}>LEARN MORE</button>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -557,7 +549,7 @@ export default function Home() {
 						<p className={styles.whyMintySubHeading}>
 							Work With a Dedicated Agency
 						</p>
-						<a href="" className={styles.whyMintyCTA}>
+						<a href="https://mintysolutions.vercel.app/casestudies" className={styles.whyMintyCTA}>
 							See a Comparison between Minty and Other Firms{" "}
 							<FontAwesomeIcon
 								icon={faCaretSquareRight}
@@ -588,7 +580,6 @@ export default function Home() {
 						<div className={styles.testimonialCardItem}>
 							<Image
 								src="/images/Vending.png"
-								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}
 								height={60}
@@ -615,7 +606,6 @@ export default function Home() {
 						<div className={styles.testimonialCardItem}>
 							<Image
 								src="/images/Puzzle_NFT.png"
-								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}
 								height={60}
@@ -639,7 +629,6 @@ export default function Home() {
 						<div className={styles.testimonialCardItem}>
 							<Image
 								src="/images/Vending.png"
-								// src="/images/Testimonial/Vending_Machines_NFT/02-min.png"
 								alt=""
 								width={60}
 								height={60}

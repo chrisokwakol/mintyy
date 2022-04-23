@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Header.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { GoRocket } from 'react-icons/go';
+import { GoRocket } from "react-icons/go";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Squash as Hamburger, Squash } from "hamburger-react";
@@ -157,7 +157,9 @@ const Header = (props) => {
 					personalised to your project
 				</p>
 				<div className={styles.headerBtns}>
-					<button className={styles.learnMoreBtn}>Learn More</button>
+					<a href="https://mintysolutions.vercel.app/services">
+						<button className={styles.learnMoreBtn}>Learn More</button>
+					</a>
 					<button className={styles.scheduleACallBtn}>Schedule a Call!</button>
 				</div>
 			</div>

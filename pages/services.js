@@ -9,10 +9,7 @@ import {
 	faSearchDollar,
 	faRocket,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-	faCircleCheck,
-	faCircleXmark,
-} from "@fortawesome/free-regular-svg-icons";
+import { faCaretSquareRight } from "@fortawesome/free-regular-svg-icons";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PreFooter from "../components/PreFooter";
@@ -57,7 +54,7 @@ function services() {
 						</ul>
 					</div>
 				</div>
-					 	
+
 				<div className={styles.servicesSectionTwo}>
 					<div className={styles.content}>
 						<h3 className={styles.servicesSectionTwoTitle}>
@@ -129,19 +126,43 @@ function services() {
 					</h1>
 					<p>Our Results Speak for Themselves.</p>
 					<div>
-						<a href="#">Learn More</a>
-						<a href="#">Contact Us</a>
+						<div>
+							<a href="https://mintysolutions.vercel.app/services">Learn More</a>
+							<FontAwesomeIcon
+								icon={faCaretSquareRight}
+								className={styles.whyMintyCTAIcon}
+							/>{" "}
+						</div>
+						<div>
+							<a href="https://mintysolutions.vercel.app/contact">Contact Us</a>
+							<FontAwesomeIcon
+								icon={faCaretSquareRight}
+								className={styles.whyMintyCTAIcon}
+							/>{" "}
+						</div>
 					</div>
 				</div>
 				<div className={styles.teamPhoto}>
-					<Image src="/images/07-min.png" alt="" width={800} height={410} objectFit="cover" />
+					<Image
+						src="/images/07-min.png"
+						alt=""
+						width={800}
+						height={410}
+						objectFit="cover"
+					/>
 				</div>
 				<div className={styles.servicesPageCTATwo}>
 					<h1>
 						Marketing is a Revolving Process. <br />
 						We Nail It Every Time
 					</h1>
-					<a href="#">Learn more</a>
+					<div>
+						<a href="https://mintysolutions.vercel.app/services">Learn more</a>
+						<FontAwesomeIcon
+							icon={faCaretSquareRight}
+							className={styles.whyMintyCTAIcon}
+						/>{" "}
+					</div>
 				</div>
 
 				{/* PRE FOOTER */}

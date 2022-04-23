@@ -9,11 +9,10 @@ import {
 	faCircleCheck,
 	faCheckSquare,
 	faRectangleXmark,
-	faCalendarXmark,
 } from "@fortawesome/free-regular-svg-icons";
 import { GiVendingMachine } from 'react-icons/gi';
 import { FaInstagram } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
+import { FaTwitter, FaRegWindowClose } from 'react-icons/fa';
 import { FaGlobeAmericas } from 'react-icons/fa';
 import { BsPuzzle } from 'react-icons/bs';
 import { GoRocket } from 'react-icons/go';
@@ -94,6 +93,7 @@ function CaseStudies() {
 								/>
 							</td>
 							<td>
+								{/* <FaRegWindowClose className={redXIcons.join(" ")} />{" "} */}
 								<FontAwesomeIcon
 									icon={faRectangleXmark}
 									className={redXIcons.join(" ")}
@@ -435,7 +435,7 @@ function CaseStudies() {
 							<BsPuzzle />
 							<button>Minting Soon</button>
 						</div>
-						<h4>Puzzle Prize NFT</h4>
+						<h4>Puzzle Prize<br/> NFT</h4>
 						<div className={styles.socialIcons}>
 							<FaTwitter className={styles.socialIcon} />{" "}
 							<FaInstagram className={styles.socialIcon} />{" "}
