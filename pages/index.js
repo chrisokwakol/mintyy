@@ -269,7 +269,7 @@ export default function Home() {
 							className={styles.pitchDeckIcon}
 						/>{" "}
 						<h2>Design</h2>
-						<p>
+						<p className={styles.designParagragh}>
 							Our in-house designers are at your disposal for any graphics you
 							need!
 						</p>
@@ -281,7 +281,7 @@ export default function Home() {
 							className={styles.pitchDeckIcon}
 						/>{" "}
 						<h2>Ad &#38; Engine Search Engine Optimization</h2>
-						<p>
+						<p className={styles.seoParagragh}>
 							Our team of marketing experts will heavily optimize your website
 							and maximize overall reach using carefully constructed budget and
 							content-plans.
@@ -297,7 +297,7 @@ export default function Home() {
 							Grow Your Project
 							<br /> with Minty Solutions
 						</h1>
-						<p className={styles.servicesOneHook}>
+						<p style={{ opacity: "0.7", fontSize: ".875rem", textAlign: "center" }}>
 							Tired of paying 50 different freelancers?
 						</p>
 						<div className={styles.aboutServices}>
@@ -340,7 +340,7 @@ export default function Home() {
 							Get Seen With Us.
 							<br /> Get Tangible Results.
 						</h1>
-						<p>
+						<p className={styles.servicesTwoContent}>
 							Our team operates on a basis of transparancy. Throughout the
 							duration of the month, you will have access to our payment logs
 							and see exactly where your money is going. Our team will prepare a
