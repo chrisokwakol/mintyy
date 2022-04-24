@@ -1,5 +1,7 @@
+import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import headerStyles from "../styles/Header.module.css";
 import styles from "../styles/Home.module.css";
 import { GrUserManager } from "react-icons/gr";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +17,10 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import { FaTwitter } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 import Typewriter from "typewriter-effect";
+import HamburgerMenu from "../components/HamburgerMenu";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PreFooter from "../components/PreFooter";
@@ -36,6 +41,28 @@ export default function Home() {
 		/>
 	)} Social Media Management and Marketing`;
 
+	// Particles Backgrounds
+	const particlesInit = async (main) => {
+		console.log(main);
+
+		await loadFull(main);
+	};
+
+	const particlesLoaded = (container) => {
+		console.log(container);
+	};
+
+	// Mobile Nav Bar State
+	const [navbarOpen, setNavbarOpen] = useState(false);
+	const burgerToggle = () => {
+		setNavbarOpen((prev) => !prev);
+	};
+
+	// Mobile Nav Bar Classes
+	const navLinksClasses = [
+		headerStyles.navLinks,
+		`${navbarOpen ? styles.navActive : ""}`,
+	];
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -47,7 +74,153 @@ export default function Home() {
 
 			<main className={styles.main}>
 				{/* <Header title={title} /> */}
-				<Header title="We Enhance Social Media Management and Marketing" />
+				{/* <Header title="We Enhance Social Media Management and Marketing" /> */}
+				<header className={headerStyles.header}>
+					<Particles
+						id={headerStyles["tsparticles"]}
+						init={particlesInit}
+						loaded={particlesLoaded}
+						options={{
+							background: {
+								color: {
+									value: "#FAF9F6",
+								},
+							},
+							fpsLimit: 120,
+							interactivity: {
+								events: {
+									onClick: {
+										enable: true,
+										mode: "push",
+									},
+									onHover: {
+										enable: true,
+										mode: "grab",
+									},
+									resize: true,
+								},
+								modes: {
+									push: {
+										quantity: 4,
+									},
+									repulse: {
+										distance: 200,
+										duration: 0.4,
+									},
+								},
+							},
+							particles: {
+								color: {
+									value: "#000",
+								},
+								links: {
+									color: "#000",
+									distance: 150,
+									enable: true,
+									opacity: 0.5,
+									width: 1,
+								},
+								collisions: {
+									enable: true,
+								},
+								move: {
+									direction: "none",
+									enable: true,
+									outModes: {
+										default: "bounce",
+									},
+									random: false,
+									speed: 1,
+									straight: false,
+								},
+								number: {
+									density: {
+										enable: true,
+										area: 800,
+									},
+									value: 80,
+								},
+								opacity: {
+									value: 0.5,
+								},
+								shape: {
+									type: "circle",
+								},
+								size: {
+									value: { min: 1, max: 5 },
+								},
+							},
+							detectRetina: true,
+							fullScreen: {
+								enable: false,
+								zIndex: 0,
+							},
+						}}
+					/>
+
+					<nav className={headerStyles.nav}>
+						<div onClick={burgerToggle}>
+							<HamburgerMenu />
+						</div>
+						<ul className={navLinksClasses.join(" ")}>
+							<li>
+								<a href="https://mintysolutions.vercel.app/">Home</a>
+							</li>
+							<li>
+								<a href="https://mintysolutions.vercel.app/services">
+									Services
+								</a>
+							</li>
+							<li>
+								<a href="https://mintysolutions.vercel.app/casestudies">
+									Case Studies
+								</a>
+							</li>
+							<li>
+								<a href="https://mintysolutions.vercel.app/contact">Contact</a>
+							</li>
+						</ul>
+						{/* <Image
+					src="/images/logo/logo-dark.png"
+					alt=""
+					width={180}
+					height={80}
+					objectFit="cover"
+				/> */}
+						<button className={headerStyles.scheduleACallBtn}>
+							Schedule a Call!
+						</button>
+					</nav>
+					{/* <div className={styles.heroContentContainer}> */}
+					<div className={headerStyles.heroContent}>
+						{/* <h1>{props.title}</h1> */}
+						<h1>
+							We <Typewriter 
+								options={{
+									strings: ["Enhance", "Optimize", "Manage"],
+									autoStart: true,
+									loop: true,
+								}}
+							/> Social Media Management and Marketing
+						</h1>
+						<p>
+							Welcome to Minty Solutions, the all-in-one digital marketing
+							service personalised to your project
+						</p>
+						<div className={headerStyles.headerBtns}>
+							<a href="https://mintysolutions.vercel.app/services">
+								<button className={headerStyles.learnMoreBtn}>
+									Learn More
+								</button>
+							</a>
+							<button className={headerStyles.scheduleACallBtn}>
+								Schedule a Call!
+							</button>
+						</div>
+					</div>
+					{/* </div> */}
+				</header>
+
 				{/* METRICS */}
 				{/* <span>And were just getting started</span> */}
 				<div className={styles.metricsSection}>
@@ -549,7 +722,9 @@ export default function Home() {
 						<p className={styles.whyMintySubHeading}>
 							Work With a Dedicated Agency
 						</p>
-						<a href="https://mintysolutions.vercel.app/casestudies" className={styles.whyMintyCTA}>
+						<a
+							href="https://mintysolutions.vercel.app/casestudies"
+							className={styles.whyMintyCTA}>
 							See a Comparison between Minty and Other Firms{" "}
 							<FontAwesomeIcon
 								icon={faCaretSquareRight}
@@ -578,12 +753,7 @@ export default function Home() {
 					<h1>What Our Clients Have to Say</h1>
 					<div className={styles.testimonialCards}>
 						<div className={styles.testimonialCardItem}>
-							<Image
-								src="/images/Vending.png"
-								alt=""
-								width={60}
-								height={60}
-							/>
+							<Image src="/images/Vending.png" alt="" width={60} height={60} />
 							<h4>Aza</h4>
 							<div>
 								<p className={styles.clientTitle}>
@@ -627,12 +797,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className={styles.testimonialCardItem}>
-							<Image
-								src="/images/Vending.png"
-								alt=""
-								width={60}
-								height={60}
-							/>
+							<Image src="/images/Vending.png" alt="" width={60} height={60} />
 							<h4>Aza</h4>
 							<div>
 								<p className={styles.clientTitle}>

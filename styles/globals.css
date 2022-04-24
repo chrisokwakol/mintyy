@@ -28,17 +28,7 @@ a {
   text-decoration: none;
 }
 
-/* a.active, a:hover {
-
-} */
-
 * {
   box-sizing: border-box;
   /* border: 1px solid red; */
-}
-
-
-@media screen and (max-width = 768px) {
-  
-	
 }

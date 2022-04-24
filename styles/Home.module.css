@@ -12,8 +12,6 @@
 	align-items: center;
 }
 
-
-
 /* METRICS */
 /* Description */
 .title,
@@ -328,7 +326,7 @@
 .whyMintyCTA {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	font-size: 1.125rem;
     text-decoration: underline;
     text-underline-offset: 5px;
