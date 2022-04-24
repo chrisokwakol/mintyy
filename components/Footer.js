@@ -18,7 +18,7 @@ function Footer() {
 						<li>United Kingdom</li>
 						<br />
 						<li>
-							For inquiries: <b>adam@mintysolutions.com</b>
+							For inquiries: adam@mintysolutions.com
 						</li>
 					</ul>
 				</div>
@@ -56,12 +56,9 @@ function Footer() {
 			</footer>
 			<div className={styles.copyright}>
 				<p>© 2022 Minty Marketing Solutions LTD. All right reserved.</p>
-				<p>
-					Developed by <a href="https://www.dezigndreams.com/" style={{ color: "#464EA4;" }}>Dezign Dreams</a>
-				</p>
 			</div>
 		</main>
 	);
-}
+} 
 
 export default Footer;

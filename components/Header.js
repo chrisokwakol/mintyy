@@ -44,7 +44,7 @@ const Header = (props) => {
 				options={{
 					background: {
 						color: {
-							value: "#FAF9F6",
+							value: "#EEF6FE",
 						},
 					},
 					fpsLimit: 120,

@@ -83,7 +83,7 @@ export default function Home() {
 						options={{
 							background: {
 								color: {
-									value: "#FAF9F6",
+									value: "#EEF6FE",
 								},
 							},
 							fpsLimit: 120,
@@ -297,7 +297,7 @@ export default function Home() {
 							Grow Your Project
 							<br /> with Minty Solutions
 						</h1>
-						<p style={{ opacity: "0.7", fontSize: ".875rem", textAlign: "center" }}>
+						<p style={{ opacity: "0.7", fontSize: ".875rem" }}>
 							Tired of paying 50 different freelancers?
 						</p>
 						<div className={styles.aboutServices}>
@@ -333,7 +333,7 @@ export default function Home() {
 				{/* Services section 2 */}
 				<div className={styles.servicesTwo}>
 					<div className={styles.servicesTwoImage}>
-						<Image src="/images/02-min.png" width={714} height={447} alt={""} />
+						<Image src="/images/02-min.png" width={614} height={447} alt={""} />
 					</div>
 					<div className={styles.content}>
 						<h1>
