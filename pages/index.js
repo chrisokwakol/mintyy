@@ -61,7 +61,7 @@ export default function Home() {
 	// Mobile Nav Bar Classes
 	const navLinksClasses = [
 		headerStyles.navLinks,
-		`${navbarOpen ? styles.navActive : ""}`,
+		`${navbarOpen ? headerStyles.navActive : ""}`,
 	];
 	return (
 		<div className={styles.container}>
